@@ -44,7 +44,7 @@
                                     <img src="images/resources/New folder/restaurent.jpg" alt="">
                                     <div class="featz-fig">
                                         <img src="images/ic1.png" alt="">
-                                        <h3 class="box-title"><a href="#" title="">Restaurant</a></h3>
+                                        <h3 class="box-title"><a href="#" title="" id="text-color">Restaurant</a></h3>
                                     </div>
                                 </div><!--featz end-->
                             </div>
@@ -53,7 +53,7 @@
                                     <img src="images/resources/New folder/accomadation.jpg" alt="">
                                     <div class="featz-fig">
                                         <img src="images/ic2.png" alt="">
-                                        <h3 class="box-title"><a href="#" title="">Accomadation</a></h3>
+                                        <h3 class="box-title"><a href="#" title="" id="text-color">Accomadation</a></h3>
                                     </div>
                                 </div><!--featz end-->
                             </div>
@@ -62,7 +62,7 @@
                                     <img src="images/resources/New folder/bar.jpg" alt="">
                                     <div class="featz-fig">
                                         <img src="images/ic3.png" alt="">
-                                        <h3 ><a href="#" title="" class="box-title">Bar</a></h3>
+                                        <h3 ><a href="#" title="" class="box-title" id="text-color">Bar</a></h3>
                                     </div>
                                 </div><!--featz end-->
                             </div>
@@ -122,7 +122,7 @@
                                                                     </div><!--room_img end-->
                                                                 </div><!--room-caroz end-->
                                                                 <div class="room_info">
-                                                                    <h3><a href="#" title="">Single Room</a></h3>
+                                                                    <h3><a href="#" title="" id="text-color">Single Room</a></h3>
                                                                     <ul class="ppt-list">
                                                                         <li>
                                                                             <img src="images/icy1.png" alt="">
@@ -169,7 +169,7 @@
                                                                     </div><!--room_img end-->
                                                                 </div><!--room-caroz end-->
                                                                 <div class="room_info">
-                                                                    <h3><a href="#" title="">Single Room</a></h3>
+                                                                    <h3><a href="#" title="" id="text-color">Single Room</a></h3>
                                                                     <ul class="ppt-list">
                                                                         <li>
                                                                             <img src="images/icy1.png" alt="">
@@ -216,7 +216,7 @@
                                                                     </div><!--room_img end-->
                                                                 </div><!--room-caroz end-->
                                                                 <div class="room_info">
-                                                                    <h3><a href="#" title="">Single Room</a></h3>
+                                                                    <h3><a href="#" title="" id="text-color">Single Room</a></h3>
                                                                     <ul class="ppt-list">
                                                                         <li>
                                                                             <img src="images/icy1.png" alt="">
@@ -258,7 +258,7 @@
                         <div class="sec-title">
                             <h3>Services</h3>
                         </div><!--sec-title ned-->
-                        <div class="services_sec srvc-carousel">
+                        <div class="services_sec srvc-carousel ">
                             <div class="service-slide">
                                 <div class="row">
                                     <div class="col-lg-6 pr-0">
@@ -278,7 +278,7 @@
                                             </ul><!--slide-no end-->
                                             <h3><a href="#" title="">Restaurant</a></h3>
                                             <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit. </p>
-                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right"></i></a>
+                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right " ></i></a>
                                         </div><!--srvc-info end-->
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@
                                             </ul><!--slide-no end-->
                                             <h3><a href="#" title="">Restaurant</a></h3>
                                             <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit. </p>
-                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right"></i></a>
+                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right " ></i></a>
                                         </div><!--srvc-info end-->
                                     </div>
                                 </div>
@@ -326,7 +326,7 @@
                                             </ul><!--slide-no end-->
                                             <h3><a href="#" title="">Restaurant</a></h3>
                                             <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit. </p>
-                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right"></i></a>
+                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right "></i></a>
                                         </div><!--srvc-info end-->
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@
                                             </ul><!--slide-no end-->
                                             <h3><a href="#" title="">Restaurant</a></h3>
                                             <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit. </p>
-                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right"></i></a>
+                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right "></i></a>
                                         </div><!--srvc-info end-->
                                     </div>
                                 </div>
@@ -374,7 +374,7 @@
                                             </ul><!--slide-no end-->
                                             <h3><a href="#" title="">Restaurant</a></h3>
                                             <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit. </p>
-                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right"></i></a>
+                                            <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right "></i></a>
                                         </div><!--srvc-info end-->
                                     </div>
                                 </div>
@@ -394,8 +394,8 @@
                                 <div class="ts-img">
                                     <img src="images/resources/us1.png" alt="">
                                 </div>
-                                <h3>Marlene Simpson</h3>
-                                <span>Adventurer</span>
+                                <h3>John</h3>
+                                <span>Best</span>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                             </div><!--testi end-->
                             <div class="testi">
