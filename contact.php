@@ -43,7 +43,7 @@
                                             <li>
                                                 <img src="images/cs2.png" alt="">
                                                 <div class="cs_info">
-                                                    <span>Call Us : 94 280 4723</span>
+                                                    <span>Call Us : +94 41 226 0563</span>
                                                 </div>
                                             </li>
                                             <li>
@@ -55,14 +55,14 @@
                                             <li>
                                                 <img src="images/cs4.png" alt="">
                                                 <div class="cs_info">
-                                                    <a href="https://grandetest.com/cdn-cgi/l/email-protection#76130e171b061a1336130e171b061a135815191b" title="">Email : <span class="__cf_email__" data-cfemail="9cf5f2faf3dcfeeef3eaf9eef3e5fdf0b2fff3f1">[email&#160;protected]</span></a>
+                                                    <a href="#" title="">Email : <span class="__cf_email__" data-cfemail="9cf5f2faf3dcfeeef3eaf9eef3e5fdf0b2fff3f1">info@goldenbayresort.com</span></a>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div><!--contact_info end-->
                                 </div>
                                 <div class="col-lg-6">
-                                    <div id="map"></div>
+                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.32717083107!2d79.91496081477251!3d6.851329195048676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2sSynotec+Holdings+Pvt.+Ltd!5e0!3m2!1sen!2slk!4v1564564041155!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div><!--contact_sec end-->

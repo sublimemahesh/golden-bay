@@ -218,7 +218,7 @@
 	.contact_td > ul {padding-right: 0;}
 	.about_we > p {padding-right: 0;}
 	.menu-bar {margin-top: 22px;}
-	.srvc-carousel .slick-next, .srvc-carousel .slick-prev {bottom: 40px;}
+	.srvc-carousel .slick-next, .srvc-carousel .slick-prev {bottom: 27px;}
 	.lyr3 {font-size: 13px !important;}
 	/*.srvc-carousel .slick-prev {left: 360px;}*/
 	/*.srvc-carousel .slick-next {left: 400px;}*/
@@ -805,4 +805,10 @@
     .mob-box{
         display: none;
     }
+}
+@media (min-width: 1280px) and (max-width: 1360px) {
+    .services-box{
+        bottom: 77px;
+    }
+    
 }

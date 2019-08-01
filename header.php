@@ -18,12 +18,13 @@
             <li><a href="services.php" title="">Services</a></li>
             <li><a href="gallery.php" title="">Gallery</a></li>
             <li><a href="contact.php" title="">Contact</a></li>
-<!--            <a href="#" title=""><i class="fa fa-facebook"></i></a>
-            <a href="#" title=""><i class="fa fa-twitter"></i></a>
-            <a href="#" title=""><i class="fa fa-instagram"></i></a>
-            <a href="#" title=""><i class="fa fa-google"></i></a>-->
+            <a href="#" title="" id="text-color"><i class="fa fa-facebook icon-padding"></i></a>
+            <a href="#" title="" id="text-color"><i class="fa fa-tripadvisor icon-padding"></i></a>
+            <a href="#" title="" id="text-color"><i class="fa fa-instagram icon-padding"></i></a>
+            <a href="#" title="" id="text-color"><i class="fa fa-whatsapp icon-padding"></i></a>
         </ul>
-        <!--        <h3>+94 77 625 8394</h3>-->
+        <h3><a href="tel:+94 41 226 0563" id="text-color">+94 41 226 0563</a></h3>
+                <h3>Golden Bay Resort, Weligama, Sri Lanka.</h3>
 
     </div>
     <div class="menu-bar">
@@ -67,10 +68,10 @@
         </div><!--menu-bar end-->
         <div class="clearfix"></div>
     </div>
-    <div class="ct_head">
+<!--    <div class="ct_head">
         <h3>+94 77 625 8394</h3>
-        <!--lang-select end-->
-    </div><!--ct_head end-->
+        lang-select end
+    </div>ct_head end-->
     <div class="navigations">
         <ul>
             <li><a href="index.php" title="">Home</a></li> 
@@ -83,8 +84,7 @@
         </ul>
     </div><!--navigations end-->
     <ul class="mbl_contact_info">
-        <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-        <li><a href="#" title="">Map</a></li>
-        <li><a href="https://grandetest.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a23242c250a2625382e2938253964292527">[email&#160;protected]</a></li>
-    </ul><!--mbl_contact_info end-->
+         <li>+94 77 625 8394</li>
+        <li>Golden Bay Resort, Weligama, Sri Lanka.</li>
+        </ul><!--mbl_contact_info end-->
 </div>

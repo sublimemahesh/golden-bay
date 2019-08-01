@@ -4,8 +4,8 @@
             <div class="ft-logo">
                 <img src="images/m-logo.png" alt="">
                 <div class="ft-text">
-                    <h2>Golden Bay Resort</h2>
-                    <h3>Hotel & Resort</h3>
+                    <h2 style="padding-top: 20px;">Golden Bay Resort</h2>
+<!--                    <h3>Hotel & Resort</h3>-->
                 </div>
             </div><!--ft-logo end-->
             <div class="room-feats-list">
@@ -45,9 +45,11 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="widget widget-info">
-                        <h4>+94 77 625 8394</h4>
+                        <h4>+94 41 226 0563</h4>
                         <ul class="info-lst">
-                            <li>Synotec Holdings Pvt Ltd, Galle, Sri Lanka.</li>
+                            <li>Synotec Holdings Pvt Ltd</li> 
+                            <li>Galle,</li> 
+                            <li>Sri Lanka.</li>
                         </ul>
                         <!--                        <ul class="pt-lst">
                                                     <li>
