@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php include './class/include.php';
+$ABOUT_US = new Page(2);
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -41,9 +44,9 @@
                             <div class="row">
                                 <div class="col-lg-5">
                                     <div class="about_we">
-                                        <h2>Everything. <span>Right where</span> you need it.</h2>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the industry's standard dummy when an unknown printer took a galley of type andspecimen book.</p> 
-                                        <p> It has survived not only five centuries, but also the leap remaining essentially unchanged. It was popularised in of Letraset sheets containing Lorem Ipsum passages, desktop publishing software like Aldus PageMaker Lorem Ipsum.</p>
+                                        <h2><?php echo $ABOUT_US->title; ?></h2>
+                                        <p><?php echo $ABOUT_US->description; ?> </p> 
+                               
                                     </div><!--about_we end-->
                                 </div>
                                 <div class="col-lg-7 p-0">
@@ -64,11 +67,11 @@
                 <section class="c-block resot-sec">
                     <div class="container">
                         <div class="sec-title">
-                            <h3>WHY CHOOSE OUR RESOT</h3>
+                            <h3>WHY CHOOSE OUR RESORT</h3>
                         </div><!--sec-title end-->
                         <div class="resot_sec">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="col-lg-4 col-md-3 col-sm-6">
                                     <div class="resot-dv">
                                         <div class="resot-icon">
                                             <i class="la la-wifi"></i>
@@ -77,7 +80,7 @@
                                         <p>Lorem Ipsum is simply dummy text of the printing and</p>
                                     </div><!--resot-dv end-->
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="col-lg-4 col-md-3 col-sm-6">
                                     <div class="resot-dv">
                                         <div class="resot-icon">
                                             <i class="la la-angellist"></i>
@@ -86,21 +89,12 @@
                                         <p>Lorem Ipsum is simply dummy text of the printing and</p>
                                     </div><!--resot-dv end-->
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="col-lg-4 col-md-3 col-sm-6">
                                     <div class="resot-dv">
                                         <div class="resot-icon">
                                             <i class="la la-diamond"></i>
                                         </div>
                                         <h3>Diamond</h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and</p>
-                                    </div><!--resot-dv end-->
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="resot-dv">
-                                        <div class="resot-icon">
-                                            <i class="la la-globe"></i>
-                                        </div>
-                                        <h3>Discovery</h3>
                                         <p>Lorem Ipsum is simply dummy text of the printing and</p>
                                     </div><!--resot-dv end-->
                                 </div>

@@ -1019,7 +1019,7 @@ nav ul ul ul:before {
 
 
 .sec-title {
-	margin-bottom: 52px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 .sec-title > h3 {
@@ -1674,7 +1674,7 @@ input:-moz-placeholder {
 	font-weight: 400;
 }
 .about_we > p {
-	padding-right: 80px;
+	padding-right: 20px;
 	margin-bottom: 24px;
 }
 .about_we .lnk-default {
@@ -3225,6 +3225,7 @@ footer.hp5 .bottom_footer p {
 .room_info > p {
 	color: #7d7d7d;
 	margin-bottom: 25px;
+        text-align: justify;
 }
 .room_info .lnk-default {
 	color: #4152a3;
