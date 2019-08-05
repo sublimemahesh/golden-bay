@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+<?php include './class/include.php'; ?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -34,95 +34,30 @@
                     </div><!--sec-title end-->
                     <div class="blog-items">
                         <div class="row" style="margin-bottom: 20px;">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/weli.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Weligama Beach</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
-                                        <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/snorkeler-with-fish.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Snorkeling</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
-
-          <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/surfing_depositphotos.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Surfing</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
-
-
-
+                            <?php
+                            $ATTRACTION = new Attraction(NULL);
+                            foreach ($ATTRACTION->all() as $key => $attraction) {
+                                ?>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="blog" style="padding-top: 35px;">
+                                        <div class="blog-img">
+                                            <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
+                                                <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">  
+                                            </a>
+                                            <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
+                                        </div>
+                                        <div class="blog-info">
+                                            <h3 class="post-title"><a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title=""><?php echo $attraction["title"]; ?></a></h3>
+                                            <p><?php echo $attraction["short_description"]; ?></p>
+                                            <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title="">Read More <i class="la la-arrow-right"></i></a>
+                                        </div>
+                                    </div><!--blog end-->
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
-                        <div class="row" >
-                            <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/surfing_depositphotos.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Surfing</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/weli.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Weligama Beach</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
 
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="blog">
-                                    <div class="blog-img">
-                                        <img src="images/resources/snorkeler-with-fish.jpg" alt="">
-                                        <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                    </div>
-                                    <div class="blog-info">
-                                        <h3 class="post-title"><a href="#" title="">Snorkeling</a></h3>
-                                        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. </p>
-                                        <a href="view-excurtion.php" title="">Read More <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div><!--blog end-->
-                            </div>
-
-
-                        </div>
                     </div><!--blog-items end-->
                 </div>
             </section><!--BLOG-ITEMS END-->

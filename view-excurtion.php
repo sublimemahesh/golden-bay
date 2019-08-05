@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+$id = $_GET["id"];
+$attraction = new Attraction($id);
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -27,100 +32,91 @@
             <section class="main-content">
                 <div class="container">
                     <div class="page-content">
-                        <div class="blogs-page">
+                        <div class="room-single-page">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <div class="blog-secs v2">
-                                        <div class="blog_item single">
-                                            <div class="blog_img">
-                                                <img src="images/resources/it1.jpg" alt="">
-                                                <span class="posted_date">
-                                                    <strong>2019</strong>
-                                                    <b>Jul</b>
-                                                </span>
-                                            </div><!--blog_img end-->
-                                            <div class="blog_info">
-                                                <h3 class="post-title">Host a Famıly Party</h3>
-                                                <ul class="meta">
-                                                    <li>
-                                                        <img src="images/m1.png" alt="">
-                                                        <a href="#" title="">Ali Tufan</a>
-                                                    </li>
-                                                    <li>
-                                                        <img src="images/m2.png" alt="">
-                                                        <a href="#" title="">2 Comments</a>
-                                                    </li>
-                                                </ul><!--meta end-->
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. </p>
-                                                <p> Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.</p>
-                                            
-                                                <!--tags_sec end-->
-                                            </div>
-                                        </div><!--blog_item end-->
-                                    </div><!--blog-secs end-->
-                                  
-                               <!--post-comment end-->
+                                    <div class="room-single-details">
+                                        <div class="room_slide_sec">
+                                            <div class="room_slide_imgs">
+                                                <?php
+                                                $ATTRACTION_PHOTOS = AttractionPhoto::getAttractionPhotosById($id);
+                                                foreach ($ATTRACTION_PHOTOS as $key => $attraction_photo) {
+                                                    if ($key < 4) {
+                                                        ?>
+                                                        <div class="rom_img_slide">
+                                                            <img src="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" alt="">
+                                                            <a href="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" title="" class="html5lightbox zoom-img"><img src="images/zoom.png" alt=""></a>
+                                                        </div>
+                                                        <?php
+                                                    }
+                                                }
+                                                ?>
+                                            </div><!--room_slide_imgs end-->
+                                            <ul class="room_slide_thumbs">
+                                                <?php
+                                                $ATTRACTION_PHOTOS = AttractionPhoto::getAttractionPhotosById($id);
+                                                foreach ($ATTRACTION_PHOTOS as $key => $attraction_photo) {
+                                                    if ($key < 4) {
+                                                        ?>
+                                                        <li>
+                                                            <div class="thumb_img">
+                                                                <img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <?php
+                                                    }
+                                                }
+                                                ?>
+                                            </ul>
+<!--<room_slide_thumbs end>-->
+                                        </div><!--room_slide_sec end-->
+                                        <div class="room_descp_sec">
+                                           <!--dep-head end-->
+                                            <div class="clearfix"></div>
+                                            <div class="descp_info">
+                                                <h3><?php echo $attraction->title ?></h3>
+                                                <p><?php echo $attraction->description; ?></p>
+                                              
+                                            </div><!--descp_info end-->
+                                           <!--descp_info end-->
+
+                                        </div><!--room_descp_sec end-->
+                                    </div><!--room-single-details end-->
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="sidebar">
-                                       <!--widget_search end-->
-                                        <!--widget_categories end-->
                                         <div class="widget widget_posts">
-                                            <h3 class="widget_title">Lasted Post</h3>
+                                            <h3 class="widget_title">Other Excurtion</h3>
                                             <ul>
-                                                <li>
-                                                    <div class="wd-post">
-                                                        <div class="wd-post-img">
+                                                <?php
+                                                $ATTRACTION = new Attraction(NULL);
+                                                foreach ($ATTRACTION->all() as $attraction) {
+                                                    ?>
+                                                    <li>
+                                                        <div class="wd-post">
+                                                             <div class="wd-post-img">
                                                             <img src="images/resources/pp1.jpg" alt="">
                                                         </div>
-                                                        <div class="wd-post-info">
-                                                            <h3><a href="#" title="">10 Tips for Holiday Travel</a></h3>
-                                                            <span>22 April 2019</span>
-                                                        </div><!--wd-post-info end-->
-                                                    </div><!--wd-post end-->
-                                                </li>
-                                                <li>
-                                                    <div class="wd-post">
-                                                        <div class="wd-post-img">
-                                                            <img src="images/resources/pp2.jpg" alt="">
-                                                        </div>
-                                                        <div class="wd-post-info">
-                                                            <h3><a href="#" title="">Are you ready to enjoy your holidays</a></h3>
-                                                            <span>22 April 2019</span>
-                                                        </div><!--wd-post-info end-->
-                                                    </div><!--wd-post end-->
-                                                </li>
-                                                <li>
-                                                    <div class="wd-post">
-                                                        <div class="wd-post-img">
-                                                            <img src="images/resources/pp3.jpg" alt="">
-                                                        </div>
-                                                        <div class="wd-post-info">
-                                                            <h3><a href="#" title="">Honeymoon in Hotel Brave Royal</a></h3>
-                                                            <span>22 April 2019</span>
-                                                        </div><!--wd-post-info end-->
-                                                    </div><!--wd-post end-->
-                                                </li>
-                                                <li>
-                                                    <div class="wd-post">
-                                                        <div class="wd-post-img">
-                                                            <img src="images/resources/pp3.jpg" alt="">
-                                                        </div>
-                                                        <div class="wd-post-info">
-                                                            <h3><a href="#" title="">Honeymoon in Hotel Brave Royal</a></h3>
-                                                            <span>22 April 2019</span>
-                                                        </div><!--wd-post-info end-->
-                                                    </div><!--wd-post end-->
-                                                </li>
+                                                            <div class="wd-post-info">
+                                                                <h3><a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
+                                                                <span>From 30 $ per night</span>
+                                                                <a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title="">View Now <i class="la la-arrow-right"></i></a>
+                                                            </div><!--wd-post-info end-->
+                                                        </div><!--wd-post end-->
+                                                    </li>
+                                                    <?php
+                                                }
+                                                ?>
                                             </ul>
                                         </div><!--widget_posts end-->
+                                        <!--wid-info end-->
                                     </div><!--sidebar end-->
                                 </div>
                             </div>
-                        </div><!--blogs-page end-->	
+                        </div><!--room-single-page end-->
                     </div><!--page-content end-->
                 </div>
-            </section><!--main-content end-->
+            </section>
 
 
             <?php include 'footer.php'; ?><!--FOOTER END-->

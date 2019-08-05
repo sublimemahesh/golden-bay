@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+$photo_album = new PhotoAlbum(1);
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -24,7 +28,7 @@
 
         <div class="layout hpg6 hop6">
 
-            <?php include 'header.php'; ?><!--side_menu_hd end-->
+<?php include 'header.php'; ?><!--side_menu_hd end-->
 
             <!--responsive_mobile_menu end-->
 
@@ -35,56 +39,24 @@
                             <h3>Gallery </h3>
                         </div><!--sec-title end-->
                         <div class="gallery-grid">
-
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab_1">
                                     <div class="gallery-grid">
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img2.jpg">
-                                                        <img src="images/resources/gg-img2.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
-
-                                            <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img3.jpg">
-                                                        <img src="images/resources/gg-img3.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img3.jpg">
-                                                        <img src="images/resources/gg-img3.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
-                                            
-                                                 <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img2.jpg">
-                                                        <img src="images/resources/gg-img2.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
-
-                                            <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img3.jpg">
-                                                        <img src="images/resources/gg-img3.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-6 gallery">
-                                                <div class="gd-item">
-                                                    <a href="images/resources/gg-img3.jpg">
-                                                        <img src="images/resources/gg-img3.jpg" alt="">
-                                                    </a>
-                                                </div><!--gd-item end-->
-                                            </div>
+                                            <?php
+                                            $ALBUM_PHOTO = new AlbumPhoto(NULL);
+                                            foreach ($ALBUM_PHOTO->getAlbumPhotosById(1) as $album_photo) {
+                                                ?>
+                                                <div class="col-lg-4 col-md-4 col-sm-6 gallery">
+                                                    <div class="gd-item">
+                                                        <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>">
+                                                            <img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="">
+                                                        </a>
+                                                    </div><!--gd-item end-->
+                                                </div>
+                                                <?php
+                                            }
+                                            ?> 
                                         </div>
                                     </div><!--gallery-grid end-->
                                 </div>
@@ -95,7 +67,7 @@
                     </div>
                 </section>
 
-                <?php include 'footer.php'; ?><!--FOOTER END-->
+<?php include 'footer.php'; ?><!--FOOTER END-->
 
                 <a href="#" title="" class="scrollTop"><i class="la la-arrow-up"></i></a>
 
