@@ -71,14 +71,14 @@ $attraction = new Attraction($id);
 <!--<room_slide_thumbs end>-->
                                         </div><!--room_slide_sec end-->
                                         <div class="room_descp_sec">
-                                           <!--dep-head end-->
+                                            <!--dep-head end-->
                                             <div class="clearfix"></div>
                                             <div class="descp_info">
                                                 <h3><?php echo $attraction->title ?></h3>
                                                 <p><?php echo $attraction->description; ?></p>
-                                              
+
                                             </div><!--descp_info end-->
-                                           <!--descp_info end-->
+                                            <!--descp_info end-->
 
                                         </div><!--room_descp_sec end-->
                                     </div><!--room-single-details end-->
@@ -86,7 +86,7 @@ $attraction = new Attraction($id);
                                 <div class="col-lg-4">
                                     <div class="sidebar">
                                         <div class="widget widget_posts">
-                                            <h3 class="widget_title">Other Excurtion</h3>
+                                            <h3 class="widget_title">Other Excursions</h3>
                                             <ul>
                                                 <?php
                                                 $ATTRACTION = new Attraction(NULL);
@@ -94,12 +94,15 @@ $attraction = new Attraction($id);
                                                     ?>
                                                     <li>
                                                         <div class="wd-post">
-                                                             <div class="wd-post-img">
-                                                            <img src="images/resources/pp1.jpg" alt="">
-                                                        </div>
+                                                            <a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title="">
+                                                                <div class="wd-post-img">
+                                                                    <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                                                                </div>
+                                                            </a>
                                                             <div class="wd-post-info">
-                                                                <h3><a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
-                                                                <span>From 30 $ per night</span>
+                                                                <h3><a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
+                                                                <span><?php echo substr($attraction["short_description"], 0, 70); ?>...</span>
+
                                                                 <a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title="">View Now <i class="la la-arrow-right"></i></a>
                                                             </div><!--wd-post-info end-->
                                                         </div><!--wd-post end-->
