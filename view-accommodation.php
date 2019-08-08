@@ -56,15 +56,13 @@ $rooms = new Room($id);
                                                 <?php
                                                 $ROOMPHOTO = RoomPhoto::getRoomPhotosById($id);
                                                 foreach ($ROOMPHOTO as $key => $roomphoto) {
-                                                    if ($key < 4) {
-                                                        ?>
-                                                        <li>
-                                                            <div class="thumb_img">
-                                                                <img src="upload/room/gallery/thumb/<?php echo $roomphoto['image_name'] ?>" alt="">
-                                                            </div>
-                                                        </li>
-                                                        <?php
-                                                    }
+                                                    ?>
+                                                    <li>
+                                                        <div class="thumb_img">
+                                                            <img src="upload/room/gallery/thumb/<?php echo $roomphoto['image_name'] ?>" alt="">
+                                                        </div>
+                                                    </li>
+                                                    <?php
                                                 }
                                                 ?>
                                             </ul>
@@ -94,12 +92,14 @@ $rooms = new Room($id);
                                                     ?>
                                                     <li>
                                                         <div class="wd-post">
-                                                            <div class="wd-post-img">
+                                                            <a href="">
+                                                                <div class="wd-post-img">
                                                                     <img src="upload/room/<?php echo $rooms['image_name'] ?>" alt="">
-                                                             </div>
+                                                                </div>
+                                                            </a>
                                                             <div class="wd-post-info">
                                                                 <h3><a href="view-accommodation.php?id=<?php echo $rooms['id'] ?>" title=""><?php echo $rooms['title'] ?></a></h3>
-                                                                <span>From 30 $ per night</span>
+                                                                <span></span>
                                                                 <a href="view-accommodation.php?id=<?php echo $rooms['id'] ?>" title="">View Now <i class="la la-arrow-right"></i></a>
                                                             </div><!--wd-post-info end-->
                                                         </div><!--wd-post end-->

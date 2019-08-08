@@ -69,7 +69,7 @@ $ROOM = new Room($id);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="no_of_rooms" class="form-control"  value="<?php echo $ROOM->no_of_rooms; ?>"  name="no_of_rooms"  required="TRUE">
-                                                <label class="form-label">Number of Rooms</label>
+                                                <label class="form-label">Number of Beds</label>
                                             </div>
                                         </div>
                                     </div>

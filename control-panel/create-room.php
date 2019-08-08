@@ -59,7 +59,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="no_of_rooms" class="form-control" autocomplete="off" name="no_of_rooms" required="true">
-                                                <label class="form-label">Number of Rooms</label>
+                                                <label class="form-label">Number of Beds</label>
                                             </div>
                                         </div>
                                     </div>
