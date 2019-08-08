@@ -56,7 +56,7 @@
                                                         <a href="view-accommodation.php?id=<?php echo $rooms['id']; ?>">
                                                             <div class="room_img">
                                                                 <img src="upload/room/gallery/thumb/<?php echo $roomphoto['image_name'] ?>" alt="">
-                                                                <span class="price-tag">Rs <?php echo $rooms['price'] ?> .00</span>
+                                                                <!--<span class="price-tag">Rs <?php // echo $rooms['price'] ?> .00</span>-->
                                                             </div>
                                                         </a>
                                                             <?php

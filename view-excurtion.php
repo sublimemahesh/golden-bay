@@ -41,14 +41,12 @@ $attraction = new Attraction($id);
                                                 <?php
                                                 $ATTRACTION_PHOTOS = AttractionPhoto::getAttractionPhotosById($id);
                                                 foreach ($ATTRACTION_PHOTOS as $key => $attraction_photo) {
-                                                    if ($key < 4) {
-                                                        ?>
-                                                        <div class="rom_img_slide">
-                                                            <img src="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" alt="">
-                                                            <a href="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" title="" class="html5lightbox zoom-img"><img src="images/zoom.png" alt=""></a>
-                                                        </div>
-                                                        <?php
-                                                    }
+                                                    ?>
+                                                    <div class="rom_img_slide">
+                                                        <img src="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" alt="">
+                                                        <a href="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" title="" class="html5lightbox zoom-img"><img src="images/zoom.png" alt=""></a>
+                                                    </div>
+                                                    <?php
                                                 }
                                                 ?>
                                             </div><!--room_slide_imgs end-->
@@ -56,15 +54,13 @@ $attraction = new Attraction($id);
                                                 <?php
                                                 $ATTRACTION_PHOTOS = AttractionPhoto::getAttractionPhotosById($id);
                                                 foreach ($ATTRACTION_PHOTOS as $key => $attraction_photo) {
-                                                    if ($key < 4) {
-                                                        ?>
-                                                        <li>
-                                                            <div class="thumb_img">
-                                                                <img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="">
-                                                            </div>
-                                                        </li>
-                                                        <?php
-                                                    }
+                                                    ?>
+                                                    <li>
+                                                        <div class="thumb_img">
+                                                            <img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="">
+                                                        </div>
+                                                    </li>
+                                                    <?php
                                                 }
                                                 ?>
                                             </ul>
@@ -90,24 +86,26 @@ $attraction = new Attraction($id);
                                             <ul>
                                                 <?php
                                                 $ATTRACTION = new Attraction(NULL);
-                                                foreach ($ATTRACTION->all() as $attraction) {
-                                                    ?>
-                                                    <li>
-                                                        <div class="wd-post">
-                                                            <a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title="">
-                                                                <div class="wd-post-img">
-                                                                    <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
-                                                                </div>
-                                                            </a>
-                                                            <div class="wd-post-info">
-                                                                <h3><a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
-                                                                <span><?php echo substr($attraction["short_description"], 0, 70); ?>...</span>
+                                                foreach ($ATTRACTION->all() as $key => $attraction) {
+                                                    if ($key < 5) {
+                                                        ?>
+                                                        <li>
+                                                            <div class="wd-post">
+                                                                <a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title="">
+                                                                    <div class="wd-post-img">
+                                                                        <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">
+                                                                    </div>
+                                                                </a>
+                                                                <div class="wd-post-info">
+                                                                    <h3><a href="view-excurtion.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
+                                                                    <span><?php echo substr($attraction["short_description"], 0, 70); ?>...</span>
 
-                                                                <a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title="">View Now <i class="la la-arrow-right"></i></a>
-                                                            </div><!--wd-post-info end-->
-                                                        </div><!--wd-post end-->
-                                                    </li>
-                                                    <?php
+                                                                    <a href="view-attraction.php?id=<?php echo $attraction['id'] ?>" title="">View Now <i class="la la-arrow-right"></i></a>
+                                                                </div><!--wd-post-info end-->
+                                                            </div><!--wd-post end-->
+                                                        </li>
+                                                        <?php
+                                                    }
                                                 }
                                                 ?>
                                             </ul>

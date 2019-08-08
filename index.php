@@ -118,12 +118,12 @@ $ABOUT_US = new Page(1);
                                                         $ROOMPHOTO = new RoomPhoto(NULL);
                                                         foreach ($ROOMPHOTO->getRoomPhotosById($rooms['id']) as $key => $roomphoto) {
                                                             ?>
-                                                            <div class="room_img">
-                                                                <a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>">
-                                                                    <img src="upload/room/gallery/thumb/<?php echo $roomphoto['image_name'] ?>" alt=""> 
-                                                                </a>
-                                                                <span class="price-tag">Rs <?php echo $rooms['price'] ?> .00</span>
-                                                            </div>
+                                                            <a href="view-accommodation.php?id=<?php echo $rooms['id']; ?>">
+                                                                <div class="room_img">
+                                                                    <img src="upload/room/gallery/thumb/<?php echo $roomphoto['image_name'] ?>" alt="">
+                                                                    <!--<span class="price-tag">Rs <?php // echo $rooms['price']   ?> .00</span>-->
+                                                                </div>
+                                                            </a>
                                                             <?php
                                                         }
                                                         ?>
@@ -134,12 +134,8 @@ $ABOUT_US = new Page(1);
                                                         <h3><a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>" title="" id="text-color"><?php echo $rooms['title']; ?></a></h3>
                                                         <ul class="ppt-list">
                                                             <li>
-                                                                <img src="images/icy1.png" alt="">
-                                                                1 GUESTS
-                                                            </li>
-                                                            <li>
-                                                                <img src="images/icy2.png" alt="">
-                                                                15 Ft²
+                                                                <img src="images/c1.png" alt="">
+                                                                <?php echo $rooms["no_of_rooms"]; ?>
                                                             </li>
                                                         </ul><!--ppt-list end-->
                                                         <p class="justify"><?php echo substr($rooms['short_description'], 0, 115) ?>...</p>
