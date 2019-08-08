@@ -341,7 +341,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="qqq">
+                <li class="qqq hidden">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Tour Package</span>
@@ -367,7 +367,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="qqq">
+                <li class="qqq hidden">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Activity</span>
@@ -414,7 +414,7 @@
 
                     </ul>
                 </li>
-                <li>
+                <li class="hidden">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Tour Type</span>
@@ -465,7 +465,7 @@
                 </li> 
 
 
-                <li>
+                <li class="hidden">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Tour Package-Normal</span>
@@ -603,7 +603,7 @@
                     </ul>
                 </li> 
 
-                <li class="qqq">
+                <li class="qqq hidden">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Product Type</span>
