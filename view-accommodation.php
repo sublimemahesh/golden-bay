@@ -92,7 +92,7 @@ $rooms = new Room($id);
                                                     ?>
                                                     <li>
                                                         <div class="wd-post">
-                                                            <a href="">
+                                                            <a href="view-accommodation.php?id=<?php echo $rooms['id'] ?>">
                                                                 <div class="wd-post-img">
                                                                     <img src="upload/room/<?php echo $rooms['image_name'] ?>" alt="">
                                                                 </div>
