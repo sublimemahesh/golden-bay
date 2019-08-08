@@ -40,15 +40,15 @@
                                 ?>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="blog" style="padding-top: 35px;">
-                                        <div class="blog-img">
-                                            <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
+                                        <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
+                                            <div class="blog-img">
                                                 <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">  
-                                            </a>
-                                            <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
-                                        </div>
+                                                <!--                                        <a href="view-excurtion.php" title="" class="blog-category">LUXURY HOTEL</a>-->
+                                            </div>
+                                        </a>
                                         <div class="blog-info">
                                             <h3 class="post-title"><a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title=""><?php echo $attraction["title"]; ?></a></h3>
-                                            <p><?php echo $attraction["short_description"]; ?></p>
+                                            <p><?php echo substr($attraction["short_description"],0,100)."..."; ?></p>
                                             <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title="">Read More <i class="la la-arrow-right"></i></a>
                                         </div>
                                     </div><!--blog end-->

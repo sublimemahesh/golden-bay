@@ -5545,6 +5545,7 @@ height: auto;
 	color: #70778b;
 	font-size: 15px;
 	margin-bottom: 18px;
+        text-align: justify;
 }
 .wd-post-info > a {
 	display: inline-block;
@@ -9330,7 +9331,7 @@ span.flatpickr-weekday {
 	border-left: 0;
 }
 .responsive_mobile_menu .navigations {
-	padding: 0 20px;
+	padding: 20px 20px;
 	margin-bottom: 100px;
 	display: block;
 }
