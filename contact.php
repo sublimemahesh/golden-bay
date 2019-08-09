@@ -19,19 +19,20 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/color.css">
+        <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
         <div class="layout">
             <?php include 'header.php'; ?>
             <main class="main_content">
-              <!--pager-sec end-->
+                <!--pager-sec end-->
 
                 <section class="c-block white-bg">
                     <div class="container">
                         <div class="contact_sec">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <div class="contact_info">
                                         <h3>CONTACT INFO</h3>
                                         <ul>
@@ -62,8 +63,8 @@
                                         </ul>
                                     </div><!--contact_info end-->
                                 </div>
-                                <div class="col-lg-6">
-                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.32717083107!2d79.91496081477251!3d6.851329195048676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2sSynotec+Holdings+Pvt.+Ltd!5e0!3m2!1sen!2slk!4v1564564041155!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <div class="col-lg-7">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.32717083107!2d79.91496081477251!3d6.851329195048676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2sSynotec+Holdings+Pvt.+Ltd!5e0!3m2!1sen!2slk!4v1564564041155!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div><!--contact_sec end-->
@@ -77,43 +78,77 @@
                             <p>Do you have anything in your mind to tell us? Please don't hesitate to get in touch to us via our contact form. </p>
                         </div><!--sec-title end-->
                         <div class="post-comment">
-                            <form>
+                            <div class="form">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-field">
                                             <label>Full Name*</label>
-                                            <input type="text" name="name" placeholder="Ali TUF..">
+                                            <input type="text" name="txtFullName" id="txtFullName" class="form-control input-validater" value="">
+                                            <span id="spanFullName"></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-field">
                                             <label>Your Email*</label>
-                                            <input type="email" name="email" placeholder="">
+                                            <input type="email" name="txtEmail" id="txtEmail" class="form-control input-validater" value="">
+                                            <span id="spanEmail"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-field">
+                                            <label>Your Contact No</label>
+                                            <input type="text" name="txtPhone" id="txtPhone" class="form-control input-validater" value="">
+                                            <span id="spanPhone"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-field">
+                                            <label>Your Country*</label>
+                                            <input type="text" name="txtCountry" id="txtCountry" class="form-control input-validater" value="">
+                                            <span id="spanCountry"></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-field">
                                             <label>Subject*</label>
-                                            <input type="email" name="email" placeholder="">
+                                            <input type="text" name="txtSubject" id="txtSubject" class="form-control input-validater" value="">
+                                            <span id="spanSubject"></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-field">
-                                            <label>Your Message</label>
-                                            <textarea name="comment"></textarea>
+                                            <label>Your Message*</label>
+                                            <textarea name="txtMessage" id="txtMessage" class="form-control input-validater"></textarea>
                                         </div>
+                                    </div>
+                                    <div class="form-group col-md-6 col-xs-12">
+                                        <div class="form-field">
+                                        <label>Security Code*</label>
+                                        <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Security code >> ">
+                                        <span id="capspan" ></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-12"> 
+                                        <label></label>
+                                        <span><?php include("./contact-form/captchacode-widget.php"); ?></span>
+                                    </div>
+                                    <div class="form-group col-md-3 col-xs-12">
+                                        <div class="div-check" >
+                                            <img src="contact-form/img/checking.gif" id="checking"/>
+                                        </div> 
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-submit">
-                                            <button type="submit" class="lnk-default">Send Message <i class="la la-arrow-right"></i></button>
+                                            <button type="submit" id="btnSubmit" class="lnk-default">Send Message <i class="la la-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                                <div id="dismessage"></div>
+                            </div>
                         </div><!--post-comment end-->
                     </div>
                 </section>
-             <?php include 'footer.php'; ?><!--FOOTER END-->
+                <?php include 'footer.php'; ?><!--FOOTER END-->
 
                 <a href="#" title="" class="scrollTop"><i class="la la-arrow-up"></i></a>
 
@@ -150,6 +185,7 @@
         <script src="js/lib/slick/slick.js"></script>
         <script src="js/map.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc537bQom7ajFpWE5sQaVyz1SQa9_tuY&amp;callback=initMap"></script>
+        <script src="contact-form/scripts.js" type="text/javascript"></script>
         <script src="js/script.js"></script>
 
 
