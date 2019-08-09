@@ -6734,7 +6734,7 @@ header.pb.hp_7 nav ul li.active {
     margin-bottom: 6px;
 }
 .form-field textarea {
-    height: 202px;
+    height: 150px;
 }
 .post-comment .form-submit button.lnk-default {
     margin-top: 1px;
@@ -10278,4 +10278,8 @@ header.novib .lang-chose {
 }
 .icon-padding{
     padding-left: 10px;
+}
+.post-comment .form {
+    width: 750px;
+    margin: 0 auto;
 }
