@@ -87,7 +87,7 @@
                                                                 <span data-toggle="tooltip" data-placement="top" title="Breakfast"><img src="images/ci4.png" alt=""></span>
                                                             </li>
                                                         </ul><!--fct-list end-->
-                                                        <a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>" title="" class="lnk-default">Book Now <i class="la la-arrow-right"></i></a>
+                                                        <a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>" title="" class="lnk-default">View More<i class="la la-arrow-right"></i></a>
                                                     </div><!--room_info end-->
                                                 </div><!--room-details end-->
                                             </div>

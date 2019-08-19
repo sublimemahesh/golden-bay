@@ -152,7 +152,7 @@ $ABOUT_US = new Page(1);
                                                                 <span data-toggle="tooltip" data-placement="top" title="Breakfast"><img src="images/ci4.png" alt=""></span>
                                                             </li>
                                                         </ul><!--fct-list end-->
-                                                        <a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>" title="" class="lnk-default">Book Now <i class="la la-arrow-right"></i></a>
+                                                        <a href="view-accommodation.php?id=<?php echo $rooms["id"]; ?>" title="" class="lnk-default">View More<i class="la la-arrow-right"></i></a>
                                                     </div><!--room_info end-->
                                                 </div><!--room-details end-->
                                             </div>
@@ -200,7 +200,7 @@ $ABOUT_US = new Page(1);
                                                 </ul><!--slide-no end-->
                                                 <h3><a href="#" title=""></a><?php echo $service ['title']; ?></h3>
                                                 <p><?php echo $service ['short_description']; ?></p>
-                                                <a href="#" title="" class="lnk-default">Read More <i class="la la-arrow-right " ></i></a>
+                                                <a href="services.php" title="" class="lnk-default">Read More <i class="la la-arrow-right " ></i></a>
                                             </div><!--srvc-info end-->
                                         </div>
                                     </div>
@@ -256,16 +256,16 @@ $ABOUT_US = new Page(1);
                                     ?>
                                     <div class="col-lg-4 col-md-6">
                                         <div class="blog">
+                                            <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
                                             <div class="blog-img light-overlay">
-                                                <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
                                                     <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="" class="img-responsive">
-                                                </a>
 
                                                 <!--                                            <a href="#" title="" class="blog-category">LUXURY HOTEL</a>-->
                                             </div>
+                                            </a>
                                             <div class="blog-info">
                                                 <h3 class="post-title"><a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title=""><?php echo $attraction["title"]; ?></a></h3>
-                                                <p><?php echo $attraction["short_description"]; ?></p>
+                                                <p><?php echo substr($attraction["short_description"],0,100)."..."; ?></p>
                                                 <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title="">Read More <i class="la la-arrow-right"></i></a>
                                             </div>
                                         </div><!--blog end-->
