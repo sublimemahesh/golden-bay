@@ -1435,7 +1435,7 @@ footer {
     vertical-align: top;
     width: 100%;
     padding-left: 19px;
-    padding-top: 6px;
+    padding-top: 20px;
 }
 .ft-text > h2 {
     color: #ffffff;
@@ -2292,8 +2292,8 @@ header.hp_3 .bk_now .bk-now {
 .srv-img:before {
     content: '';
     position: absolute;
-    top: 60px;
-    left: -63px;
+    top: 50px;
+    left: -50px;
     width: 100%;
     height: 100%;
     background-color: #262626;
@@ -2338,7 +2338,7 @@ header.hp_3 .bk_now .bk-now {
 }
 
 .srvc-info {
-    padding: 84px 70px 0 64px;
+    padding: 60px 70px 0 64px;
 }
 .srvc-info > h3 {
     color: #262626;
@@ -2375,7 +2375,7 @@ header.hp_3 .bk_now .bk-now {
     margin: 0;
 }
 .service-slide {
-    padding: 70px 0;
+    padding: 0px 0px 50px 0px;
     margin-left: 50px;
 }
 .srvc-carousel .slick-prev {
@@ -2392,7 +2392,7 @@ header.hp_3 .bk_now .bk-now {
     background-color: inherit;
     z-index: 99;
     top: auto;
-    bottom: 26px;
+    bottom: 15px;
     margin: 0;
 }
 .srvc-carousel .slick-prev:before, .srvc-carousel .slick-next:before {

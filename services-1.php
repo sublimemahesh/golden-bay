@@ -37,46 +37,56 @@
                         <div class="sec-title">
                             <h3>Services</h3>
                         </div><!--sec-title end-->
-                        <section class="">
-                            <div class="container">
-                                <div class="page-content">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                                <div class="tb-detaiils">
-                                                    <div class="row">
-                                                        <?php
-                                                        $SERVICE = new Service(NULL);
-                                                        foreach ($SERVICE->all() as $service) {
-                                                            ?>
-                                                            <div class="col-xl-6">
-                                                                <div class="tb-row">
-                                                                    <div class="room_details">
-                                                                        <div class="room-caroz">
-                                                                            <div class="room_img">
-                                                                                <img src="upload/service/<?php echo $service ['image_name']; ?>" alt="">
-                                                                            </div><!--room_img end-->
-                                                                        </div><!--room-caroz end-->
-                                                                        <div class="room_info">
-                                                                            <h3><a href="#" title=""><?php echo $service ['title']; ?></a></h3>
-                                                                            <p><?php echo $service ['description']; ?></p> 
-                                                                        </div><!--room_info end-->
-                                                                        <div class="clearfix"></div>
-                                                                    </div><!--room-details end-->
-                                                                </div><!--tb-row end-->
-                                                            </div>
-                                                            <?php
-                                                        }
-                                                        ?>
-
-                                                    </div>
-                                                </div><!--tb-detaiils end-->
-                                            </div>
-                                        </div>
-                                    </div><!--main-dv end-->
+                        <div class="resot_sec">
+                            <div class="row">
+                                <?php
+                                $SERVICE = new Service(NULL);
+                                foreach ($SERVICE->all() as $service){
+                                ?>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="post post-mb">
+                                        <div class="post_img">
+                                            <img src="upload/service/<?php echo $service ['image_name']; ?>" alt="">
+                                        </div><!--post_img end-->
+                                        <div class="post-info">
+                                            <div class="post-hd">
+                                                 <span>Golden Bay Resort</span>
+                                                <h3 class="post-title"><a href="#" title=""><?php echo $service ['title']; ?></a></h3>
+                                            </div><!--post-hd end-->
+                                        </div><!--post-info end-->
+                                    </div><!--post end-->
                                 </div>
+                                <?php
+                                }
+                                ?>
+<!--                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="post">
+                                        <div class="post_img">
+                                            <img src="images/resources/post1.jpg" alt="">
+                                        </div>post_img end
+                                        <div class="post-info">
+                                            <div class="post-hd">
+                                                <span>Golden Bay Resort</span>
+                                                <h3 class="post-title"><a href="#" title="">Accomadation</a></h3>
+                                            </div>post-hd end
+                                        </div>post-info end
+                                    </div>post end
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="post">
+                                        <div class="post_img">
+                                            <img src="images/resources/post2.jpg" alt="">
+                                        </div>post_img end
+                                        <div class="post-info">
+                                            <div class="post-hd">
+                                                <span>Golden Bay Resort</span>
+                                                <h3 class="post-title"><a href="#" title="">Restaurent</a></h3>
+                                            </div>post-hd end
+                                        </div>post-info end
+                                    </div>post end
+                                </div>-->
                             </div>
-                        </section>
+                        </div>
                         <!--resot_sec end-->
                     </div>
                 </section>

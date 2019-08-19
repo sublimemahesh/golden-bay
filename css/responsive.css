@@ -231,7 +231,7 @@
     .room-feats-list {float: right;border:0;padding: 0;padding-top: 25px;}
     .room-feats-list ul {float: right;}
     /*.top-footer .social-links {width: 100%;text-align: center;padding: 0 0 25px;}*/
-    .bottom-footer .widget {margin-bottom: 50px;}
+    .bottom-footer .widget {margin-bottom: 30px;}
     .bottom-footer {padding-bottom: 0;}
     .error_sec {padding: 0;padding-bottom: 50px;}
     .resot-dv {margin-bottom: 35px;}
@@ -380,6 +380,20 @@
     .lyr3 {font-size: 12px !important;}
     .lyr7 {font-size: 14px !important;line-height: 20px !important;margin-bottom: 20px !important;margin-top: 10px !important;}
     .lyr6 {font-size: 14px !important;}
+    .descp_info p {
+        text-align: justify;
+    }
+    .div-check {
+        height: 20px;
+        width: 300px;
+        margin: 0px -40px 1px 1px;
+    }
+    .slide-no {
+        margin-bottom: 0px;
+    }
+    .div-check {
+        margin: 0px -40px 1px 1px !important;
+    }
 }
 
 
@@ -482,7 +496,7 @@
     .main-slider.hp_5 .checking-form.sldr .checkform > li {float: left;width: 33.33%;padding: 0;}
     .bottom-footer {text-align: center;}
     .lc-pagination nav ul li {margin-bottom: 20px;}
-    .sec-title > h3 {font-size: 18px;}
+    .sec-title > h3 {font-size: 24px; padding-left: 0px;}
     .info_list li {margin-right: 0;width: 100%;margin-bottom: 20px;}
     .hpg10 .info_list li a.map-link {float: none;}
     .blog-info > p {font-size: 14px;line-height: 22px;}
@@ -747,7 +761,7 @@
     .top-footer .ft-logo {text-align: center;}
     .rooms-sec .row {margin: 0;}
     .layout.hpg3 .avail-sec .check-form > h4.text-center {text-align: left !important;}
-    .sec-title > h3 {font-size: 17px;}
+    .sec-title > h3 {font-size: 24px; padding-left: 0px;}
     .right-sime .menu-bar.fixed {background-color: #262626;width: 120px;}
     header.hp-2 .cont-list li {margin-right: 0;width: 100%;}
     .bookingg-sec form .row {margin: 0;}
@@ -788,6 +802,7 @@
     .faqs_sec h5 .btn {width: 94%;overflow: hidden;}
     .layout.hpg6.hop6 footer.ft-hp3 .container {padding: 0 20px;}
     .lyrp {font-size: 12px !important;}
+    .ft-logo {padding: 20px 0 0 0;}
 }
 @media (min-width: 360px) and (max-width: 1024px) {
     .logo-mob{

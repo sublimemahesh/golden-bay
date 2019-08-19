@@ -5,7 +5,7 @@
                 <img src="images/m-logo.png" alt="">
                 <div class="ft-text">
                     <h2 style="padding-top: 20px;">Golden Bay Resort</h2>
-<!--                    <h3>Hotel & Resort</h3>-->
+                    <!--                    <h3>Hotel & Resort</h3>-->
                 </div>
             </div><!--ft-logo end-->
             <div class="room-feats-list">
@@ -78,11 +78,16 @@
                     <div class="widget widget-links">
                         <h3 class="widget-title">Excursions</h3>
                         <ul>
-                            <li><a href="#" title="">Galle</a></li>
-                            <li><a href="#" title="">Matara</a></li>
-                            <li><a href="#" title="">Mirissa</a></li>
-                            <li><a href="#" title="">Trincomalee</a></li>
-                            <li><a href="#" title="">Colombo</a></li>
+                            <?php
+                            $ATTRACTION = new Attraction(NULL);
+                            foreach ($ATTRACTION->all() as $key => $attraction) {
+                                if ($key < 6) {
+                                    ?>
+                                    <li><a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>" title=""><?php echo $attraction["title"]; ?></a></li>
+                                    <?php
+                                }
+                            }
+                            ?>
                         </ul>
                     </div><!--widget-links end-->
                 </div>

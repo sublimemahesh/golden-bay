@@ -39,7 +39,7 @@
                             foreach ($ATTRACTION->all() as $key => $attraction) {
                                 ?>
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="blog" style="padding-top: 35px;">
+                                    <div class="blog" style="padding-top: 15px;">
                                         <a href="view-excurtion.php?id=<?php echo $attraction["id"]; ?>">
                                             <div class="blog-img">
                                                 <img src="upload/attraction/<?php echo $attraction['image_name']; ?>" alt="">  
